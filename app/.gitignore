@@ -1,0 +1,13 @@
+# Android build files
+/build/
+/app/build/
+
+# Firebase and API secrets
+.env
+.env.*
+!example.env
+serviceAccountKey.json
+google-services-adminsdk*.json
+
+# IDE files
+.idea/

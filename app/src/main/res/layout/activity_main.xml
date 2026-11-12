@@ -1,0 +1,130 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FC">
+
+    ```
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UNIVERSITY REGISTRATION"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#173B68"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Year Student Registration"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#666666"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Names"/>
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your full names"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID Number"/>
+
+        <EditText
+            android:id="@+id/etID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter ID number"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration Number"/>
+
+        <EditText
+            android:id="@+id/etRegNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter registration number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:layout_marginTop="12dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"/>
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course"/>
+
+        <Spinner
+            android:id="@+id/spCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department"
+            android:layout_marginTop="12dp"/>
+
+        <Spinner
+            android:id="@+id/spDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:layout_marginTop="24dp"/>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CLEAR"/>
+
+    </LinearLayout>
+    ```
+
+</ScrollView>

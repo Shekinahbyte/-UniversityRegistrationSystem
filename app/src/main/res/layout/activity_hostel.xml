@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HOSTEL REGISTRATION"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#173B68"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="University Accommodation Request"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Hostel Location -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hostel Location"/>
+
+        <Spinner
+            android:id="@+id/spHostelLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Room Type -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room Type"
+            android:layout_marginTop="20dp"/>
+
+        <Spinner
+            android:id="@+id/spRoomType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Sharing Option -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room Sharing Preference"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgSharing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbShareable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shareable"/>
+
+            <RadioButton
+                android:id="@+id/rbNotShareable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Shareable"/>
+
+        </RadioGroup>
+
+        <!-- Student ID -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student ID Number"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/etHostelStudentID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter student ID number"
+            android:inputType="number"/>
+
+        <!-- Buttons -->
+
+        <Button
+            android:id="@+id/btnHostelNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:layout_marginTop="28dp"/>
+
+        <Button
+            android:id="@+id/btnHostelClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CLEAR"/>
+
+    </LinearLayout>
+
+</ScrollView>

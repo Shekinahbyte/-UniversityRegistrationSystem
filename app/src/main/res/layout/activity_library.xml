@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LIBRARY REGISTRATION"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#173B68"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="University Library Book Request"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Book ISBN -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book ISBN"/>
+
+        <Spinner
+            android:id="@+id/spISBN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Author -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select a book ISBN"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="#FFFFFF"/>
+
+        <!-- Book Title -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Title"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select a book ISBN"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="#FFFFFF"/>
+
+        <!-- Date Borrowed -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Borrowed"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/etDateBorrowed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select borrowing date"
+            android:focusable="false"
+            android:clickable="true"/>
+
+        <!-- Return Date -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Return"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/etReturnDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select return date"
+            android:focusable="false"
+            android:clickable="true"/>
+
+        <!-- Student ID -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student ID Number"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/etStudentID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Student ID Number"
+            android:inputType="number"/>
+
+        <!-- Buttons -->
+
+        <Button
+            android:id="@+id/btnLibraryNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:layout_marginTop="24dp"/>
+
+        <Button
+            android:id="@+id/btnLibraryClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CLEAR"/>
+
+    </LinearLayout>
+
+</ScrollView>

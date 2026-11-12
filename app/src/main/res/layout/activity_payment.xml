@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    ```
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="University Registration"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#173B2D"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Complete your registration payment"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#555555"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PAYMENT DETAILS"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#173B2D"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration Fee (KES)"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KES 5,000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#16834A"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="M-PESA Phone Number"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etMpesaPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. 0712345678"
+            android:inputType="phone"
+            android:padding="14dp"
+            android:backgroundTint="#16834A"/>
+
+        <TextView
+            android:id="@+id/tvPaymentStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment Status: PENDING"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#D18B00"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PAY WITH M-PESA"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#16834A"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/btnCheckPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHECK PAYMENT STATUS"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You will receive an M-PESA prompt on your phone. Enter your PIN to authorize payment."
+            android:textSize="13sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+    ```
+
+</ScrollView>
